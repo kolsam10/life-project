@@ -1,0 +1,437 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5f6f8;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.logo img {
+  width: 40px;
+}
+
+/* NAV LINKS */
+nav {
+  background: #0d1b2a;
+  padding: 8px 20px;
+  border-radius: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #4ea8ff;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.primary {
+  background: #3a86ff;
+  color: white;
+}
+
+.secondary {
+  background: #3a86ff;
+  color: white;
+  margin-left: 10px;
+}
+
+.light {
+  background: #cdebe7;
+  color: #2a9d8f;
+  margin-left: 10px;
+}
+
+/* HERO SECTION */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  color: #555;
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.hero-buttons {
+  margin-bottom: 40px;
+}
+
+/* IMAGE */
+.hero-image img {
+  width: 60%;
+  max-width: 600px;
+}
+
+.our services {
+  text-align: center;
+  padding: 60px 20px;
+}
+.title{
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20rem;
+}
+.title h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  margin-left: 14rem;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 50px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: transparent;
+  width: 250px;
+  height: 370px;
+  text-align: left;
+  border: white;
+}
+
+.card img {
+  width: 50px;
+  margin-bottom: 25px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.card a:hover {
+  color: #ff5a3c;
+}
+
+/* Tablets (≤ 992px) */
+@media (max-width: 992px) {
+  .cards {
+    gap: 30px;
+  }
+
+  .card {
+    width: 220px;
+  }
+
+  .how-it-works h2 {
+    font-size: 28px;
+  }
+}
+
+/* Small tablets & large phones (≤ 768px) */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+  }
+
+  .card h3 {
+    text-align: center;
+  }
+
+  .card p {
+    text-align: center;
+  }
+}
+
+/* Mobile phones (≤ 480px) */
+@media (max-width: 480px) {
+  .how-it-works {
+    padding: 40px 15px;
+  }
+
+  .how-it-works h2 {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
+}
+
+.marketing {
+  padding: 80px 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* LEFT TEXT */
+.text {
+  flex: 1;
+}
+
+.text h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.text p {
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.text a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.text a:hover {
+  color: #ff5a3c;
+}
+
+/* RIGHT IMAGE */
+.image {
+  flex: 1;
+  text-align: center;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 📱 RESPONSIVE */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .container {
+    gap: 20px;
+  }
+
+  .text h2 {
+    font-size: 24px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text {
+    order: 2;
+  }
+
+  .image {
+    order: 1;
+  }
+
+  .text h2 {
+    font-size: 22px;
+  }
+
+  .text p {
+    font-size: 14px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .marketing {
+    padding: 50px 15px;
+  }
+
+  .text h2 {
+    font-size: 20px;
+  }
+}
+
+.agency {
+  padding: 80px 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+/* IMAGE */
+.image {
+  flex: 1;
+  text-align: center;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* TEXT */
+.content {
+  flex: 1;
+}
+
+.content h1 {
+  font-size: 36px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.content p {
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #3b6ef5;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background: #2f5bd1;
+}
+
+/* 📱 RESPONSIVE */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .content h1 {
+    font-size: 30px;
+  }
+
+  .container {
+    gap: 30px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image {
+    order: 1;
+  }
+
+  .content {
+    order: 2;
+  }
+
+  .content h1 {
+    font-size: 26px;
+  }
+
+  .content p {
+    font-size: 14px;
+    align-items: center;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .agency {
+    padding: 50px 15px;
+  }
+
+  .content h1 {
+    font-size: 22px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+  }
+}

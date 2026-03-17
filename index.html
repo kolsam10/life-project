@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <h2 class="logo">CloudtopG</h2>
+    <p class="signup">New User? <span>Sign Up</span></p>
+  </header>
+
+  <section class="container">
+
+    <!-- Left Illustration -->
+    <div class="left">
+      <img src="image/slack-removebg-preview.png" alt="illustration">
+    </div>
+
+    <!-- Right Form -->
+    <div class="right">
+      <h1>Welcome Back!</h1>
+      <p>Login to continue</p>
+
+      <form>
+        <div class="input-box">
+          <span>📧</span>
+          <input type="email" placeholder="Email">
+        </div>
+
+        <div class="input-box">
+          <span>🔒</span>
+          <input type="password" placeholder="Password">
+        </div>
+
+        <div class="actions">
+          <button type="submit">Login</button>
+          <a href="#">Forget Password?</a>
+        </div>
+      </form>
+    </div>
+      
+  </section>
+   
+<div>
+<div class="icons">
+  <h3>LOGIN with</h3>
+  <a href="#" class="icon google" style="margin-right: 2rem;"><i class="fab fa-google"></i></a>
+  <a href="#" class="icon facebook" style="margin-right: 2rem;"><i class="fab fa-facebook-f"></i></a>
+  <a href="#" class="icon twitter" style="margin-right: 2rem;"><i class="fab fa-twitter"></i></a>
+</div>
+
+</div>
+
+<!-- Landing Page -->
+<div class="container" id="landingPage" style="display:none; text-align:center;">
+  <h1>Welcome to CloudtopG 🎉</h1>
+  <p>You have successfully logged in.</p>
+  <button onclick="logout()">Logout</button>
+</div>
+
+<script>
+// Login details
+const validEmail = "admin@gmail.com";
+const validPassword = "1234";
+
+// Handle form submit
+document.querySelector("form").addEventListener("submit", function(e) {
+  e.preventDefault(); // stop page refresh
+
+  const email = document.querySelector("input[type='email']").value;
+  const password = document.querySelector("input[type='password']").value;
+
+  if (email === validEmail && password === validPassword) {
+    document.querySelector(".container").style.display = "none"; // hide login
+    document.getElementById("landingPage").style.display = "block"; // show landing
+  } else {
+    alert("Invalid email or password!");
+  }
+});
+
+// Logout function
+function logout() {
+  document.getElementById("landingPage").style.display = "none";
+  document.querySelector(".container").style.display = "flex";
+}
+</script>
+</body>
+</html>
