@@ -125,14 +125,14 @@ nav a.active {
   margin-bottom: 50px;
 }
 
-.cards {
+.services-container {
   display: flex;
   justify-content: center;
   gap: 50px;
   flex-wrap: wrap;
 }
 
-.card {
+.services {
   background: transparent;
   width: 250px;
   height: 370px;
@@ -140,23 +140,23 @@ nav a.active {
   border: white;
 }
 
-.card img {
+.services img {
   width: 50px;
   margin-bottom: 25px;
 }
 
-.card h3 {
+.services h3 {
   font-size: 18px;
   margin-bottom: 15px;
 }
 
-.card p {
+.services p {
   font-size: 14px;
   color: #333;
   line-height: 1.6;
 }
 
-.card a {
+.services a {
   display: inline-block;
   margin-top: 15px;
   text-decoration: none;
@@ -164,54 +164,54 @@ nav a.active {
   font-size: 14px;
 }
 
-.card a:hover {
+.services a:hover {
   color: #ff5a3c;
 }
 
 /* Tablets (≤ 992px) */
 @media (max-width: 992px) {
-  .cards {
+  .services-container {
     gap: 30px;
   }
 
-  .card {
+  .services {
     width: 220px;
   }
 
-  .how-it-works h2 {
+  .services h2 {
     font-size: 28px;
   }
 }
 
 /* Small tablets & large phones (≤ 768px) */
 @media (max-width: 768px) {
-  .cards {
+  .services-container {
     flex-direction: column;
     align-items: center;
   }
 
-  .card {
+  .services {
     width: 80%;
     max-width: 400px;
     text-align: center;
   }
 
-  .card h3 {
+  .services h3 {
     text-align: center;
   }
 
-  .card p {
+  .services p {
     text-align: center;
   }
 }
 
 /* Mobile phones (≤ 480px) */
 @media (max-width: 480px) {
-  .how-it-works {
+  .our sercives {
     padding: 40px 15px;
   }
 
-  .how-it-works h2 {
+  .our sercives h2 {
     font-size: 24px;
   }
 
@@ -220,11 +220,11 @@ nav a.active {
     padding: 0 10px;
   }
 
-  .card {
+  .services {
     width: 100%;
   }
 
-  .card p {
+  .services p {
     font-size: 13px;
   }
 }
@@ -435,3 +435,186 @@ nav a.active {
     padding: 10px 20px;
   }
 }
+
+/* case study */
+.container py-5 text-center{
+  display: block;
+}
+.section-title {
+      font-weight: 700;
+      font-size: 32px;
+    }
+
+    .section-subtitle {
+      color: #666;
+      margin-bottom: 40px;
+    }
+
+    .card-box {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card-box img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .card-title {
+      font-weight: 600;
+      margin-top: 15px;
+    }
+
+    .card-text {
+      color: #777;
+      font-size: 14px;
+    }
+
+    /* Custom background colors */
+    .bg-dark-blue { background: #020a47; }
+    .bg-orange { background: #f9a602; }
+    .bg-purple { background: #a5a3d1; }
+    .bg-green { background: #63c3a5; }
+
+    .img-wrapper {
+      padding: 30px;
+      border-radius: 5px;
+    }
+
+    /* customers*/
+    .customer-title {
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .customer-subtitle {
+      color: #666;
+      margin-bottom: 50px;
+    }
+
+    .testimonial-card {
+      background-color: #d8e1e9c7;
+      padding: 35px 25px;
+      text-align: center;
+      border-radius: 5px;
+      height: 100%;
+      width: 70%;
+      transition: 0.3s;
+      margin-left: 5rem;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .testimonial-img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .testimonial-text {
+      font-size: 15px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .testimonial-name {
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .testimonial-role {
+      color: #666;
+      font-size: 14px;
+    }
+
+
+    /* CTA SECTION */
+    .cta-section {
+      background: url('bg.png') center/cover no-repeat;
+      padding: 80px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .cta-section h2 {
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .cta-btn {
+      border: 2px solid red;
+      color: red;
+      padding: 10px 25px;
+      border-radius: 30px;
+      background: transparent;
+      transition: 0.3s;
+    }
+
+    .cta-btn:hover {
+      background: red;
+      color: #fff;
+    }
+
+    .container-cta {
+      background-image: url('https://cloudtopg.netlify.app/assets/cloudtop--ssVcrRN.jpeg') ;
+      max-width: 600px;
+      margin: auto;
+      display: block;
+      width: 1000px;
+      height: 400px;
+    }
+
+    .container-cta h2 {
+      font-size: 28px;
+      color: #fff;
+      margin-top: 5rem;
+    }
+    .container-cta h3 {
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    /* FOOTER */
+    .footer {
+      background: #eee;
+      padding: 60px 0;
+    }
+
+    .footer h5 {
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .footer p,
+    .footer a {
+      color: #333;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    .email-input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+
+    .btn-dark-custom {
+      background: #000;
+      color: #fff;
+      border-radius: 8px;
+      padding: 8px 15px;
+      border: none;
+    }
+
+    .brand {
+      font-weight: bold;
+    }
