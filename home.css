@@ -175,66 +175,7 @@ justify-items: center;
   color: #ff5a3c;
 }
 
-/* Tablets (≤ 992px) */
-@media (max-width: 992px) {
-  .services-container {
-    gap: 30px;
-  }
 
-  .services {
-    width: 220px;
-  }
-
-  .services h2 {
-    font-size: 28px;
-  }
-}
-
-/* Small tablets & large phones (≤ 768px) */
-@media (max-width: 768px) {
-  .services-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .services {
-    width: 80%;
-    max-width: 400px;
-    text-align: center;
-  }
-
-  .services h3 {
-    text-align: center;
-  }
-
-  .services p {
-    text-align: center;
-  }
-}
-
-/* Mobile phones (≤ 480px) */
-@media (max-width: 480px) {
-  .our sercives {
-    padding: 40px 15px;
-  }
-
-  .our sercives h2 {
-    font-size: 24px;
-  }
-
-  .subtitle {
-    font-size: 14px;
-    padding: 0 10px;
-  }
-
-  .services {
-    width: 100%;
-  }
-
-  .services p {
-    font-size: 13px;
-  }
-}
 
 .marketing {
   padding: 80px 20px;
@@ -286,53 +227,7 @@ justify-items: center;
   height: auto;
 }
 
-/* 📱 RESPONSIVE */
 
-/* Tablets */
-@media (max-width: 992px) {
-  .container {
-    gap: 20px;
-  }
-
-  .text h2 {
-    font-size: 24px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .text {
-    order: 2;
-  }
-
-  .image {
-    order: 1;
-  }
-
-  .text h2 {
-    font-size: 22px;
-  }
-
-  .text p {
-    font-size: 14px;
-  }
-}
-
-/* Small phones */
-@media (max-width: 480px) {
-  .marketing {
-    padding: 50px 15px;
-  }
-
-  .text h2 {
-    font-size: 20px;
-  }
-}
 
 .agency {
   padding: 80px 20px;
@@ -390,58 +285,7 @@ justify-items: center;
   background: #2f5bd1;
 }
 
-/* 📱 RESPONSIVE */
 
-/* Tablets */
-@media (max-width: 992px) {
-  .content h1 {
-    font-size: 30px;
-  }
-
-  .container {
-    gap: 30px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .image {
-    order: 1;
-  }
-
-  .content {
-    order: 2;
-  }
-
-  .content h1 {
-    font-size: 26px;
-  }
-
-  .content p {
-    font-size: 14px;
-    align-items: center;
-  }
-}
-
-/* Small phones */
-@media (max-width: 480px) {
-  .agency {
-    padding: 50px 15px;
-  }
-
-  .content h1 {
-    font-size: 22px;
-  }
-
-  .btn {
-    padding: 10px 20px;
-  }
-}
 
 /* case study */
 .container py-5 text-center{
@@ -761,47 +605,56 @@ img {
 }
 
 /* ========================= */
-/* 📱 MOBILE RESPONSIVE */
+/* 📱 MOBILE (max-width: 768px) */
 /* ========================= */
-
 @media (max-width: 768px) {
 
-  .hero h1 {
-    font-size: 1.8rem;
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-top: 2rem;
   }
 
   .services-container {
     grid-template-columns: 1fr;
   }
 
-  .marketing .container {
-    flex-direction: column;
-    text-align: center;
-  }
-
+  .marketing .container,
   .agency .container {
     flex-direction: column;
     text-align: center;
   }
 
+  .marketing .image,
+  .agency .image {
+    margin-top: 2rem;
+  }
+
   .row {
-    margin: 0 !important;
+    margin-left: 0 !important;
+    width: 100% !important;
   }
 
   .customers .row {
-    width: 100% !important;
     margin-left: 0 !important;
   }
 }
 
 /* ========================= */
-/* 📱 TABLET */
+/* 📱 TABLET (769px - 1024px) */
 /* ========================= */
-
 @media (min-width: 769px) and (max-width: 1024px) {
 
   .services-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
   }
 
   .marketing .container,
