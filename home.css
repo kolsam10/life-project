@@ -43,6 +43,7 @@ nav a {
   transition: 0.3s;
 }
 
+
 nav a:hover,
 nav a.active {
   color: #4ea8ff;
@@ -54,6 +55,8 @@ nav a.active {
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  font-weight: bold;
+  color: white;
 }
 
 .primary {
@@ -79,19 +82,24 @@ nav a.active {
   padding: 50px 20px;
 }
 
-.hero h1 {
+.hero-para h1 {
   font-size: 40px;
   font-weight: bold;
   margin-bottom: 15px;
 }
 
-.hero p {
+.hero-para p {
   color: #555;
   max-width: 600px;
-  margin: auto;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  margin-left: 70rem;
 }
-
+ 
+.hero-para {
+  margin-bottom: 30px;
+  align-items: center;
+justify-items: center;
+}
 .hero-buttons {
   margin-bottom: 40px;
 }
@@ -127,14 +135,13 @@ nav a.active {
 
 .services-container {
   display: flex;
-  justify-content: center;
-  gap: 50px;
+  justify-items: center;
   flex-wrap: wrap;
 }
 
 .services {
   background: transparent;
-  width: 250px;
+  width: 200px;
   height: 370px;
   text-align: left;
   border: white;
@@ -618,3 +625,188 @@ nav a.active {
     .brand {
       font-weight: bold;
     }
+
+    /* Responsive */
+    /* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GENERAL */
+body {
+  font-family: Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* NAVBAR FIX */
+.navbar .btn {
+  margin: 5px;
+}
+
+/* HERO SECTION */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  margin: 20px 0;
+  font-size: 1rem;
+}
+
+.hero-buttons {
+  margin: 20px 0;
+}
+
+.hero-buttons .btn {
+  margin: 10px;
+}
+
+.hero-image {
+  margin-top: 30px;
+}
+
+/* SERVICES */
+.our-services {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.services {
+  padding: 20px;
+}
+
+/* MARKETING SECTION */
+.marketing .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 50px 20px;
+}
+
+.marketing .text {
+  flex: 1;
+}
+
+.marketing .image {
+  flex: 1;
+}
+
+/* AGENCY SECTION */
+.agency .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 50px 20px;
+}
+
+.agency .image,
+.agency .content {
+  flex: 1;
+}
+
+/* CASE STUDIES */
+.card-box {
+  text-align: center;
+  padding: 20px;
+}
+
+/* TESTIMONIALS */
+.testimonial-card {
+  text-align: center;
+  padding: 20px;
+}
+
+.testimonial-img {
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* CTA */
+.cta-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* FOOTER */
+.footer {
+  padding: 40px 20px;
+  background: #111;
+  color: #fff;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ========================= */
+/* 📱 MOBILE RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+
+  .marketing .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .agency .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .row {
+    margin: 0 !important;
+  }
+
+  .customers .row {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+}
+
+/* ========================= */
+/* 📱 TABLET */
+/* ========================= */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .services-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .marketing .container,
+  .agency .container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
