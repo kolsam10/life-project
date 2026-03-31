@@ -607,7 +607,7 @@ img {
 /* ========================= */
 /* 📱 MOBILE (max-width: 768px) */
 /* ========================= */
-@media (max-width: 768px) {
+@media (max-width: 668px) {
 
   .hero {
     flex-direction: column;
@@ -646,7 +646,7 @@ img {
 /* ========================= */
 /* 📱 TABLET (769px - 1024px) */
 /* ========================= */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 700px) and (max-width: 1024px) {
 
   .services-container {
     grid-template-columns: repeat(2, 1fr);
