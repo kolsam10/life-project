@@ -514,6 +514,7 @@ img {
 .our-services {
   padding: 50px 20px;
   text-align: center;
+  background-color: #2f5bd1;
 }
 
 .services-container {
@@ -521,6 +522,8 @@ img {
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
   margin-top: 30px;
+  display: flex;
+  margin-left: 20rem;
 }
 
 .services {
@@ -528,34 +531,67 @@ img {
 }
 
 /* MARKETING SECTION */
-.marketing .container {
+/* Content */
+.meals-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-  padding: 50px 20px;
+  gap: 60px;
+  margin-left: 4rem;
 }
 
-.marketing .text {
+/* Image */
+.meals-image {
   flex: 1;
 }
 
-.marketing .image {
+.meals-image img {
+  width: 550px;
+  border-radius: 16px;
+}
+/* Text */
+.meals-text {
   flex: 1;
 }
 
-/* AGENCY SECTION */
-.agency .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-  padding: 50px 20px;
+.meals-text h1 {
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
 
-.agency .image,
-.agency .content {
-  flex: 1;
+.meals-text p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #444;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 7rem;
+}
+.text-content {
+    flex: 1;
+    margin-bottom: 16rem;
+    margin-left: 5rem;
+}
+
+.text-content h1 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.image-content {
+    flex: 1;
+    position: relative;
 }
 
 /* CASE STUDIES */
@@ -580,7 +616,9 @@ img {
 .cta-section {
   text-align: center;
   padding: 60px 20px;
-}
+  background-image: url("/assets/contact-bg-DhiTwzIN.jpg");
+};
+
 
 /* FOOTER */
 .footer {
@@ -600,7 +638,7 @@ img {
 /* ========================= */
 /* 📱 MOBILE (max-width: 768px) */
 /* ========================= */
-@media (max-width: 668px) {
+@media (min-width: 368px) {
 
   .hero {
     flex-direction: column;
@@ -639,7 +677,7 @@ img {
 /* ========================= */
 /* 📱 TABLET (769px - 1024px) */
 /* ========================= */
-@media (min-width: 700px) and (max-width: 1024px) {
+@media (min-width: 400px) and (max-width: 524px) {
 
   .services-container {
     grid-template-columns: repeat(2, 1fr);
