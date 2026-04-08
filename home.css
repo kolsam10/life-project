@@ -1,12 +1,10 @@
-* {
+body {
+  background: #f5f6f8;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
-}
-
-body {
-  background: #f5f6f8;
+  overflow-x: hidden;
 }
 
 /* NAVBAR */
@@ -635,32 +633,43 @@ img {
 .footer h5{
   color: #000;
 }
+.forms{
+  display: block;
+}
 /* ========================= */
 /* 📱 MOBILE (max-width: 768px) */
 /* ========================= */
 @media (min-width: 368px) {
+    .form{
+      flex-direction: column;
+    }
 
   .hero {
     flex-direction: column;
     text-align: center;
   }
-
+  .title {
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+  }
+  }
   .hero-image {
     margin-top: 2rem;
   }
 
-  .services-container {
+  .container {
     grid-template-columns: 1fr;
   }
 
-  .marketing .container,
-  .agency .container {
+  .meals-content,
+  .text-content {
     flex-direction: column;
     text-align: center;
   }
 
-  .marketing .image,
-  .agency .image {
+  .image-content,
+  .meal-image {
     margin-top: 2rem;
   }
 
@@ -670,16 +679,16 @@ img {
   }
 
   .customers .row {
-    margin-left: 0 !important;
+    margin-left: 0;
+  align-items: baseline;
   }
-}
 
 /* ========================= */
 /* 📱 TABLET (769px - 1024px) */
 /* ========================= */
 @media (min-width: 400px) and (max-width: 524px) {
 
-  .services-container {
+  .container {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -688,8 +697,8 @@ img {
     text-align: center;
   }
 
-  .marketing .container,
-  .agency .container {
+ .meals-content,
+  .text-content{
     flex-direction: column;
     text-align: center;
   }
